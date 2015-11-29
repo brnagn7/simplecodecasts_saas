@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :photos
+	resources :contacts
 	root 'pages#home'
 	get '/about' => 'pages#about'
 	get '/photos' => 'photos#show'
