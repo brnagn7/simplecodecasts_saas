@@ -33,13 +33,16 @@
   </div>
 </nav>
 <div class="container">
+<% flash.each do |key, value| %>
+  <%= content_tag :div, value, class: "alert alert-#{key}" %>
+<% end %>
 <%= yield %>
 </div>
 <footer class="footer-distributed">
 
 			<div class="footer-left">
 
-				<%= image_tag 'spyder.png' %>
+				<%= image_tag 'spydergreenftr.png' %>
 
 				<p class="footer-links">
 					<a href="#">Home</a>
