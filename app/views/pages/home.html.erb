@@ -1,11 +1,40 @@
-<%#
-# To change this license header, choose License Headers in Project Properties.
-# To change this template file, choose Tools | Templates
-# and open the template in the editor.
-%>
+<% provide(:title, "Home") %>
 <div class="jumbotron"> 
 <h1 align="center">Welcome to Spyderops</h1>
 <h3 align="center">A membership site where entrepreneurs can meet developers.</h3>
 </div>
-<h1 class="spyderopslogo">Hello</h1>
+<table class="table"> 
+<tr>
+<td> 
+<div class="panel panel-primary" style="max-width: 200px;">
+<div class="panel-heading">
+<h3 class="panel-title">Panel Title</h3>
+</div>
+<div class="panel-body">
+		Panel content
+				<ul>
+		<li>Linux</li>
+		<li>Python</li>
+		<li>System Security</li>
+		</ul>
+</div>
+</div>
+</td>
+<td> 
+<div class="panel panel-info" style="max-width: 200px;">
+<div class="panel-heading">
+<h3 class="panel-title">Panel Title</h3>
+</div>
+<div class="panel-body">
+		Panel content
+		<ul>
+		<li><%= link_to "Linux", root_path %></li>
+		<li>Python</li>
+		<li>System Security</li>
+		</ul>
+</div>
+</div>
+</td>
+</tr>
+</table>
 
